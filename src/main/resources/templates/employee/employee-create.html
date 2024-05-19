@@ -17,7 +17,7 @@
       Welcome to Employee Registration Page
     </h2>
     <div class="card-body">
-      <form th:object="${employee}">
+      <form th:object="${employee}" th:action="@{/employee/insert}" method="post">
         <div class="form-row">
           <div class="form-group col-md-4">
             <label for="inputFirstname4">First Name</label>
@@ -66,7 +66,7 @@
             <input type="text" class="form-control" id="inputZip" th:field="*{zipCode}">
           </div>
         </div>
-        <button type="register" class="btn btn-danger">Register</button>
+        <button type="submit" class="btn btn-danger">Register</button>
       </form>
     </div>
    </div>
