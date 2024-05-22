@@ -12,7 +12,6 @@ public class EmployeeService {
     public void saveEmployee(Employee employee){
         employeeList.add(employee);
     }
-
     public List<Employee>  readAllEmployee(){
        return employeeList;
     }
